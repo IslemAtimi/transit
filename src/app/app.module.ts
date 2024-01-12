@@ -42,9 +42,9 @@ import { CreateClientComponent } from './create-client/create-client.component';
     MatIconModule,
     HttpClientModule,
     MatButtonModule,
-    FormsModule
-    // provideFirebaseApp(() => initializeApp(firebaseConfig)),
-    // provideFirestore(() => getFirestore()),
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(firebaseConfig)),
+    provideFirestore(() => getFirestore()),
     // AngularFireModule.initializeApp(environment.firebaseConfig),
     // AngularFirestoreModule,
     
