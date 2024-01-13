@@ -20,6 +20,7 @@ import { initializeApp, getApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { firebaseConfig } from 'src/environments/environment';
 import { CreateClientComponent } from './create-client/create-client.component';
+import { CaisseComponent } from './caisse/caisse.component';
 // import { AngularFireModule } from '@angular/fire';
 // import { AngularFirestoreModule } from '@angular/fire/firestore';
 
@@ -34,6 +35,7 @@ import { CreateClientComponent } from './create-client/create-client.component';
     FacturesComponent,
     FacturesCloseComponent,
     CreateClientComponent,
+    CaisseComponent,
     
   ],
   imports: [

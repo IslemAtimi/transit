@@ -10,7 +10,7 @@ import { ClientService } from '../services/client.service';
 export class FacturesCloseComponent implements OnInit {
 
   constructor(private http: HttpClient,
-              
+private clientService: ClientService
       ) { }
 
   clients: client[] = [];
@@ -26,9 +26,10 @@ export class FacturesCloseComponent implements OnInit {
     })
   }
 
-  // createClient(){
-  //   this.clientService.createClient();
-  // }
+  createClient(){
+    this.clientService.getCollectionData();
+    console.log("--------------")
+  }
 
 
 // async readRobots() {
